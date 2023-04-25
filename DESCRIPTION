@@ -1,10 +1,12 @@
 Package: simtrapoccR
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: Simulate Camera Trap Capture-Recapture and Presence-Absence Occupancy Data
+Version: 1.0.0
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
+    person("Jack", "Thomas", , "jack.h.thomas567@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+Description: The 'simtrapoccR' package allows you to generate capture-recapture history matrices
+             and presence-absence history matrices for feeding into population estimation
+             statistical models such as the combined model of Blanc et al. (2014).
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

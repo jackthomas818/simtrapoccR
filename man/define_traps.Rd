@@ -13,11 +13,11 @@ define_traps(ntraps)
 traps a 2D array of trap locations in x,y coordinates
 }
 \description{
-Function that places camera traps in the study area.
+Function that places camera traps in the study area (a unit square).
 }
 \details{
 Uses a Poisson process where x, y coordinates of each trap
-are independent uniform random variables
+are independent uniform random variables between 0 and 1.
 }
 \examples{
 n <- 5

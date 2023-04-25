@@ -1,9 +1,9 @@
 #' Define Trap Locations
 #'
-#' Function that places camera traps in the study area.
+#' Function that places camera traps in the study area (a unit square).
 #'
 #' Uses a Poisson process where x, y coordinates of each trap
-#' are independent uniform random variables
+#' are independent uniform random variables between 0 and 1.
 #'
 #' @param ntraps the number of camera traps to place
 #'
@@ -188,7 +188,6 @@ sim_trap_interac <- function(homeranges, ntraps, nsample_cap, trap_detec) {
 #'                         trap j at period k
 #'
 #' @return capture_hist a 2D array of capture histories for each individual
-#' @export
 #'
 create_cap_hist <- function(homeranges, nsample_cap, camera_trap_full) {
   capture_hist <- array(data = 0, dim = c(nrow(homeranges), nsample_cap))
@@ -208,8 +207,8 @@ create_cap_hist <- function(homeranges, nsample_cap, camera_trap_full) {
 
 #' Generate Capture History Data
 #'
-#' Function that generates the capture history array. Uses camera traps to
-#' be the capture-recapture method.
+#' Function that generates the capture history array. Uses camera trapping as
+#' the capture-recapture method.
 #'
 #' @param ntraps number of camera traps to place in study area
 #' @param nsample_cap number of capture-recapture sampling occasions

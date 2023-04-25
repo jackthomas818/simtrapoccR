@@ -21,10 +21,6 @@ devtools::install_github("jackthomas818/simtrapoccR")
 
 ## Usage
 
-A fairly common task when dealing with strings is the need to split a
-single string into many parts. This is what `base::strplit()` and
-`stringr::str_split()` do.
-
 ``` r
 # number of sites
 nsites <- 4**2

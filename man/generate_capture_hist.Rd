@@ -23,8 +23,8 @@ the capture history for each individual, where 1 indicates a
 capture.
 }
 \description{
-Function that generates the capture history array. Uses camera traps to
-be the capture-recapture method.
+Function that generates the capture history array. Uses camera trapping as
+the capture-recapture method.
 }
 \examples{
 # number of individuals in capture history

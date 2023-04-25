@@ -6,8 +6,7 @@
 Simulate Camera Trap Capture-Recapture and Presence-Absence Occupancy Data
 
 The 'simtrapoccR' package allows you to generate capture-recapture history matrices and
-presence-absence history matrices for feeding into population estimation statistical models
-such as the combined model of Blanc et al. (2014).
+presence-absence history matrices for feeding into population estimation statistical models.
 
 ## Installation
 

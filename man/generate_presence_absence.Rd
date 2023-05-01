@@ -49,6 +49,8 @@ nsample_pa <- 7
 # homeranges for the n individuals
 homeranges <- create_homeranges(n)
 
-presence_absence <- generate_presence_absence(nsites, nsample_pa, tau, sigma,
-                                              delta, homeranges)
+presence_absence <- generate_presence_absence(
+  nsites, nsample_pa, tau, sigma,
+  delta, homeranges
+)
 }

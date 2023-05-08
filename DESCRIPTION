@@ -6,7 +6,8 @@ Authors@R:
            comment = c(ORCID = "YOUR-ORCID-ID"))
 Description: The 'simtrapoccR' package allows you to generate capture-recapture history matrices
              and presence-absence history matrices for feeding into population estimation
-             statistical models.
+             statistical models. Information on how the data are generated can be found
+             at https://github.com/jackthomas818/masters-project.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

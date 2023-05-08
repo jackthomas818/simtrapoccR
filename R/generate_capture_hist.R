@@ -208,7 +208,8 @@ create_cap_hist <- function(homeranges, nsample_cap, camera_trap_full) {
 #' Generate Capture History Data
 #'
 #' Function that generates the capture history array. Uses camera trapping as
-#' the capture-recapture method.
+#' the capture-recapture method. NOTE: the study
+#' area is assumed to be a unit square (1x1).
 #'
 #' @param ntraps number of camera traps to place in study area
 #' @param nsample_cap number of capture-recapture sampling occasions

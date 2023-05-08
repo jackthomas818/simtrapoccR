@@ -156,7 +156,8 @@ sim_presence_absence <- function(nsites, nsample_pa, homeranges, regions, tau, s
 
 #' Generate Presence-Absence Data
 #'
-#' Function that generates the presence-absence array.
+#' Function that generates the presence-absence array. NOTE: the study
+#' area is assumed to be a unit square (1x1).
 #'
 #' @param nsites number of sites in study area
 #' @param nsample_pa number of presence-absence sampling occasions

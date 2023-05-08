@@ -24,7 +24,8 @@ capture.
 }
 \description{
 Function that generates the capture history array. Uses camera trapping as
-the capture-recapture method.
+the capture-recapture method. NOTE: the study
+area is assumed to be a unit square (1x1).
 }
 \examples{
 # number of individuals in capture history

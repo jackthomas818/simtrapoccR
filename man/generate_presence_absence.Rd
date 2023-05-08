@@ -24,7 +24,8 @@ presence_absence a 2D array (nsites rows by nsample_pa columns)
 of 0s and 1s where 1 indicates a detection for a site on a period.
 }
 \description{
-Function that generates the presence-absence array.
+Function that generates the presence-absence array. NOTE: the study
+area is assumed to be a unit square (1x1).
 }
 \examples{
 

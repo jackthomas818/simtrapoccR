@@ -3,7 +3,7 @@ Title: Simulate Camera Trap Capture-Recapture and Presence-Absence Occupancy Dat
 Version: 1.0.2
 Authors@R: 
     person("Jack", "Thomas", , "jack.h.thomas567@gmail.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+           comment = c(ORCID = "0009-0005-9408-9310"))
 Description: The 'simtrapoccR' package allows you to generate capture-recapture history matrices
              and presence-absence history matrices for feeding into population estimation
              statistical models. Information on how the data are generated can be found

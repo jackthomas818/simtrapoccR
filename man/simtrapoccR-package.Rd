@@ -17,7 +17,7 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: Jack Thomas \email{jack.h.thomas567@gmail.com} (\href{https://orcid.org/YOUR-ORCID-ID}{ORCID})
+\strong{Maintainer}: Jack Thomas \email{jack.h.thomas567@gmail.com} (\href{https://orcid.org/0009-0005-9408-9310}{ORCID})
 
 }
 \keyword{internal}

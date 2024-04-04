@@ -51,16 +51,19 @@ half_norm_detec <- function(d, tau) {
 #' @param presence_absence returned data from generate_presence_absence
 #' @param capture_hist returned data from generate_capture_hist
 #' @param id a unique identifier for the outputted files
+#' @param dir output directory
 #'
 #' @return Outputs capture history text and presence absence csv files
 #' @export
 #'
-output_data <- function(presence_absence, capture_hist, id) {
+output_data <- function(presence_absence, capture_hist, id, dir = "./") {
   # Presence-absence
   # data structure: rows = sites; columns = occasions
 
   # .csv format
-  write.table(presence_absence, file = paste0("./presence-absence-data-", id, ".csv"), col.names = FALSE, sep = ",", row.names = FALSE)
+  outfile <- file.path(dir, paste0("presence-absence-data-", id, ".csv"))
+
+  write.table(presence_absence, file = outfile, col.names = FALSE, sep = ",", row.names = FALSE)
 
   # Capture-recapture
   # data structure: rows = individuals; columns = capture occasions
@@ -70,7 +73,8 @@ output_data <- function(presence_absence, capture_hist, id) {
   capture_hist <- capture_hist[rowSums(capture_hist == 0, na.rm = TRUE) < ncol(capture_hist), ]
 
   # .txt format
-  write.table(capture_hist, file = paste0("./capture-recapture-data-", id, ".txt"), col.names = FALSE, sep = " ", row.names = FALSE)
+  outfile <- file.path(dir, paste0("capture-recapture-data-", id, ".txt"))
+  write.table(capture_hist, file = outfile, col.names = FALSE, sep = " ", row.names = FALSE)
 
   return(paste0("Done outputting data: capture-recapture-data-", id, ".txt and presence-absence-data-", id, ".csv"))
 }

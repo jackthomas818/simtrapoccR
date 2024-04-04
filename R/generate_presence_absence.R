@@ -74,7 +74,7 @@ setup_grid <- function(nsites) {
 #'         individual spends in the given grid cell
 #' @export
 #'
-#' @import OpenMx
+#' @import mvtnorm
 #' @examples
 #' # show high proportion when homerange in center of grid cell
 #' calc_prop(0.25 / 2, 0.25 / 2, 0, 0.25, 0, 0.25, 0.1)
@@ -84,7 +84,8 @@ calc_prop <- function(x, y, x0, x1, y0, y1, tau) {
   lbound <- c(x0, y0)
   ubound <- c(x1, y1)
 
-  prop <- OpenMx::omxMnor(covariance, means, lbound, ubound)[1]
+  #prop <- OpenMx::omxMnor(covariance, means, lbound, ubound)[1]
+  prop <- mvtnorm::pmvnorm(lbound, ubound, means, sigma = covariance)
   return(prop)
 }
 

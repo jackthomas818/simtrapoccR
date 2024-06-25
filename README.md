@@ -1,6 +1,7 @@
 # simtrapoccR
 
 <!-- badges: start -->
+[![DOI](https://zenodo.org/badge/632629168.svg)](https://zenodo.org/doi/10.5281/zenodo.12534157)
 <!-- badges: end -->
 
 Simulate Camera Trap Capture-Recapture and Presence-Absence Occupancy Data
